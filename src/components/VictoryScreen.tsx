@@ -3,6 +3,7 @@ import { Award, RotateCcw, CheckCircle2, FileText, Share2, Sparkles, Clock, Chec
 import { GameProgress } from '../types/game';
 import { soundManager } from '../utils/audio';
 import { fireVictoryConfetti } from '../utils/confetti';
+import labDoorsImage from '../assets/images/lab_doors_unlocking_1793034239935.jpg';
 
 interface VictoryScreenProps {
   progress: GameProgress;
@@ -52,7 +53,7 @@ export const VictoryScreen: React.FC<VictoryScreenProps> = ({
         {/* Futuristic Opened Blast Door Image */}
         <div className="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden">
           <img
-            src="/src/assets/images/lab_doors_unlocking_1793034239935.jpg"
+            src={labDoorsImage}
             alt="فتح أبواب مختبر الذكاء الاصطناعي بنجاح"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center filter brightness-[0.9] contrast-[1.15]"

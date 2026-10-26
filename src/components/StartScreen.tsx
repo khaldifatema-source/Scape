@@ -1,6 +1,7 @@
 import React from 'react';
 import { Play, ShieldAlert, Cpu, Sparkles, BookOpen, Target, Clock, Award } from 'lucide-react';
 import { soundManager } from '../utils/audio';
+import heroLabImage from '../assets/images/hero_ai_lab_futuristic_1793034238191.jpg';
 
 interface StartScreenProps {
   onStart: () => void;
@@ -32,7 +33,7 @@ export const StartScreen: React.FC<StartScreenProps> = ({ onStart, onOpenSetting
         {/* Futuristic Lab Background Image */}
         <div className="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden">
           <img
-            src="/src/assets/images/hero_ai_lab_futuristic_1793034238191.jpg"
+            src={heroLabImage}
             alt="مختبر الذكاء الاصطناعي المستقبلي"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1] scale-105 hover:scale-100 transition-transform duration-700"
