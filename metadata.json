@@ -1,0 +1,6 @@
+{
+  "name": "الهروب من مختبر الذكاء الاصطناعي",
+  "description": "نشاط تفاعلي تعليمي وتقويم ختامي لدرس الذكاء الاصطناعي ومراحل تعلم الآلة لطالبات المرحلة الثانوية",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
